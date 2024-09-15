@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    
+
+}
+:root{
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #2294ed;
+    --accent-color-dark: #1d69a3;
+    --padding-inline-section: 20px;
+}
+body{
+    color: var(--primary-text-color);
+    /* background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    padding-inline: var(--padding-inline-section);
+    /* background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(234,249,249,0.67) 0.1%, rgba(239,249,251,0.63) 90.1% );
+     */
+     background-color: #ffffff;
+}
+.main{
+    background-color: rgba(238, 238, 238, 0.34);
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+ul{
+    list-style: none;
+}
+.primary-button{
+    background-color: var(--accent-color) !important;
+    border-radius: 6px;
+    font-weight: 700;
+    color: white !important;
+    padding: 12px 24px;
+    box-shadow: 0 0 2px var(--secondary-text-color);
+    transition: 0.2s ease-out;
+}
+.primary-button:hover{
+    background-color: var(--accent-color-dark);
+}
+/* nav-section */
+nav{
+    /* border: 2px solid black; */
+    /* background-color: #8EC5FC;
+background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%); */
+
+}
+.nav-section{
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 10px;
+    
+}
+h1{
+    font-size: 3rem;
+    color: white;
+}
+p{
+    font-size: 1.05rem;
+    color: var(--secondary-text-color);
+    line-height: 1.8rem;
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+.logo a{
+    padding-right: 11px;
+}
+.logo a img{
+    width: 50px;
+}
+.nav-links{
+    flex-basis: 500px;
+}
+.nav-links ul{
+    justify-content: space-between;
+    gap: 40px;
+}
+/* profile card starts */
+.profile-card{
+    max-width: 40vw;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+    border-radius: 24px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.5s all ease-out;
+}
+.profile-card:hover{
+    scale: 1.2;
+    box-shadow: 0 0 20px black;
+}
+.image{
+    position: relative;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    background-color: #4070f4;
+    padding: 3px;
+    margin-bottom: 10px;
+}
+.image .profile-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #fff;
+}
+.profile-card .text-data{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+}
+.text-data .name{
+    font-size: 22px;
+    font-weight: 500;
+}
+.text-data .job{
+    font-size: 15px;
+    font-weight: 400;
+}
+.profile-card .media-btn{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+}
+.media-btn .link{
+    text-decoration: none;
+    /* background-color: #4070f4; */
+    opacity: 0.8;
+    margin: 0 8px;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    columns: #fff;
+    font-size: 18px;
+}
+.media-btn .link:hover{
+    opacity: 1;
+    scale: 1.2;
+}
+/* profile card ends */
+header{
+    padding: 80px var(--padding-inline-section) 0 ;
+}
+.header-section{
+    position: relative;
+    justify-content: center;
+    gap: 50px;
+}
+.about-section{
+    max-width: 40vw;
+    gap: 20px;
+    margin-top: 20px;
+}
+.about-section h1{
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-weight: 700;
+    position: relative;
+    color: rgb(0, 0, 0) ;
+}
+.about-section h1::before{
+    content: "About me";
+    position: absolute;
+    color: black;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    z-index: -1;
+}
+.about-section p{
+    /* font-size: 70px; */
+    margin-top: 50px;
+}
+.col{
+    padding: 80px var(--padding-inline-section) 0 ;
+}
+.edu-part{
+    flex-direction: column;
+    gap: 20px;
+}
+.edu-part h2{
+    font-size: 70px;
+    font-weight: 700;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+.edu-part h2::before{
+    content: "Education";
+    position: absolute;
+    color: black;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 1px rgb(63, 62, 62);
+    z-index: -1;
+}
+.col .contents{
+	padding: 0px 30px;
+	border-left: 2px solid #bababa;
+}
+.col .contents .box{
+	position: relative;
+	padding: 20px;
+	border: 1px solid #eaeaea;
+	background-color: #ffffff;
+	cursor: pointer;
+	transition: all 0.4s;
+	margin-bottom: 20px;
+}
+.col .contents .box:hover{
+	box-shadow: 0px 3px 12px 0px #ccc;
+	border: 1px solid transparent;
+}
+.col .contents .box::before{
+	content: '';
+	position: absolute;
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	right: calc(100% + 22px);
+	top: 0;
+	background-color: #000000;
+	border: 2px solid white;
+}
+.box h4{
+	position: relative;
+	color: #000000;
+}
+.box h3{
+	font-size: 19px;
+	padding: 10px 0px 6px;
+	font-family: helvetica;
+	color: #444;
+}
+.box p{
+	line-height: 1.2;
+	color: #666;
+	font-size: 17px;
+}
+/* skills section start */
+.features-section{
+    padding: 80px var(--padding-inline-section) 0;
+    background-image: url(https://usability-hub-clone.vercel.app/assets/asset%2032.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.features-header{
+    text-align: center;
+}
+.features-header h2{
+    margin-bottom: 20px;
+    font-size: 70px;
+    font-weight: 700;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+.features-header h2::before{
+    content: "Languages,I have my hands on";
+    position: absolute;
+    color: black;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 1px rgb(63, 62, 62);
+    z-index: -1;
+}
+.features-card img{
+    width: 60px;
+}
+.features-card{
+    flex-direction: column;
+    gap: 20px;
+    max-width: 30%;
+    text-align: center;
+}
+.feature-area{
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+.special{
+    margin-left: 400px;
+}
+
+/* extra skills section */
+.big-feature-section{
+    padding: 30px var(--padding-inline-section) 0;
+}
+.big-feature-container{
+    gap: 30px;
+}
+.feature-img img{
+
+    width: 80%;
+}
+.feature-desc{
+    flex-direction: column;
+    align-items: flex-start;
+}
+.examples-section{
+    padding: 80px var(--padding-inline-section) 0;
+}
+.examples-header{
+    text-align: center;
+}
+.examples-header h2{
+    margin-bottom: 20px;
+}
+.soft-skills-section{
+    padding: 30px var(--padding-inline-section) 0;
+}
+
+.skills-needed{
+    /* margin-bottom: 20px;
+    text-align: center; */
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 400px;
+}
+.skills-needed h2{
+    font-size: 70px;
+    font-weight: 700;
+    position: relative;
+    color: rgb(0, 0, 0); 
+}
+.skills-needed h2::before{
+    content: "Soft Skills";
+    position: absolute;
+    color: black;
+    top: -4px;
+    left: -4px;
+    -webkit-text-stroke: 1px rgb(63, 62, 62);
+    z-index: -1;
+   
+}
+.examples-card{
+    width: 23%;
+    position: relative;
+    min-height: 300px;
+    background: black;
+    background-image: linear-gradient(rgb(0,0,0,0.1),rgb(0,0,0,0.8),url(https://usability-hub-clone.vercel.app/assets/asset%2035.jpeg));
+    background-size: cover;
+    transition: 0.2s ease-out;
+}
+.examples-card:hover{
+    box-shadow: 0 0 10px #888;
+}
+.examples-area{
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.card-text{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    color: white;
+}
+
+/* footer section */
+/* ////......Contact......///// */
+.contact {
+    background: #07374a;
+    position: relative;
+    height: 92vh;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .container2{
+    padding: 90px;
+  }
+  .contact-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .contact-content h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #ffffff;
+    padding-bottom: 0.5rem;
+  }
+  .contact-content .mail {
+    color: #f0f0e6;
+    padding-bottom: 0.2rem;
+    font-size: 1rem;
+  }
+  .contact-content .links {
+    color: #25b79f;
+    padding: 0.5rem;
+    padding-bottom: 1.8rem;
+    font-size: 1rem;
+  }
+  .contact-content a {
+    text-decoration: none;
+    color: #25b79f;
+    padding: 0.5rem;
+    transition: 0.3s ease-in-out;
+  }
+  .contact-content a:hover {
+    color: #f0f0e6;
+  }
